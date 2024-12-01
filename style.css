@@ -93,10 +93,7 @@
         height: 25px;
     }
 
-    .radyo {
-        flex-direction: column;
-    }
-
+    
     .radyo input {
         width: 100%;
     }
