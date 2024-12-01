@@ -1,0 +1,278 @@
+/* القيم الافتراضية */
+#header {
+    padding: 1rem 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #FF7B00;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.links li:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.socials img {
+    width: 30px;
+    height: 30px;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.socials img:hover {
+    transform: scale(1.1);
+}
+
+.radyo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    background-color: #d3841f;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.radyo input {
+    border: none;
+    background-color: #000000BB;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px;
+    color: white;
+}
+
+/* الشاشات المتوسطة */
+@media (max-width: 768px) {
+    .links {
+        gap: 0.5rem;
+    }
+
+    .links li {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .socials img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .radyo {
+        flex-direction: column;
+    }
+
+    .radyo input {
+        width: 100%;
+    }
+}
+
+/* الشاشات الصغيرة */
+@media (max-width: 480px) {
+    .links {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.7rem;
+    }
+
+    .links li {
+        width: 100%;
+        text-align: center;
+        font-size: 0.85rem;
+    }
+
+    .socials img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .radyo {
+        font-size: 0.85rem;
+    }
+}
+
+
+
+/* HERO Section */
+#hero {
+    padding: 2rem 1rem;
+}
+
+#hero h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+#hero label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+#hero .form{
+    background-color: #222;
+    color: white;
+    padding: 10px;
+}
+#hero .form-control {
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+#hero .security-code-container {
+    gap: 1rem;
+}
+
+#hero .security-code {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+    background-color: #e9ecef;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+#hero .refresh-icon {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s;
+}
+
+#hero .refresh-icon:hover {
+    color: #007bff;
+}
+
+#hero #loginbtn {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#hero #loginbtn:hover {
+    background-color: #0056b3;
+}
+
+#hero .online {
+    background-color: #295456;
+    color: #f5b60f;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+#hero .top {
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#hero .top .content {
+    gap: 1rem;
+}
+
+#hero .top .content img {
+    max-width: 80px;
+}
+
+#hero .top .content .ad {
+    flex: 1;
+    text-align: center;
+}
+
+#hero .top .content h4 {
+    font-size: 1.5rem;
+    color: #ffe834;
+}
+
+#hero .top .content p {
+    font-size: 1rem;
+    color: #555;
+}
+
+#hero .ad{
+background-color: rgba(255, 255, 255, 0.308);
+padding: 16px;
+
+};
+
+
+
+/* FOOTER Section */
+#footer {
+    background-color: #333;
+    padding: 1.5rem 1rem;
+    color: #fff;
+}
+
+#footer .footer {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#footer p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+#footer .footersocials button {
+    background-color: #200f26;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#footer .footersocials button i {
+    font-size: 1rem;
+}
+
+#footer .footersocials button:hover {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
